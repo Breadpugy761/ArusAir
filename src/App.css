@@ -1,0 +1,96 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the body and html elements take up the full screen */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background for the page */
+  color: white; /* Adjust text color for readability */
+}
+
+/* Make the container take up the full height and width */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container spans the full height */
+  width: 100%; /* Ensure the container spans the full width */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  background-color: #333; /* Dark background for the navbar */
+  padding: 1rem 0;
+  width: 100%; /* Ensure the navbar spans the full width */
+  position: fixed; /* Fix it to the top of the page */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Remove padding and margin from the list */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the list items horizontally */
+  gap: 1.5rem;
+  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Ensure the navbar items align properly */
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area to grow and take the remaining space */
+.content {
+  flex-grow: 1; /* Allow content to take remaining space */
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  text-align: center; /* Ensure text inside is centered */
+  width: 100%;
+  min-height: 100vh; /* Ensure the content spans the full height of the viewport */
+  padding-top: 4rem; /* Adjust to account for the fixed navbar height */
+}
+
+/* Adjust image styling for better display */
+img {
+  max-width: 100%; /* Prevent image overflow */
+  height: auto;
+  margin-top: 1rem;
+}
+div {
+  width: 100%;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  .content {
+      padding: 1rem;
+  }
+}
