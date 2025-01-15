@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
-import FutureTech from "./pages/FutureTech";
-import Model from "./pages/Model";
-import Breakthroughs from "./pages/Breakthroughs";
+import Home from "./Pages/Home";
+import FutureTech from "./Pages/FutureTech";
+import Model from "./Pages/Model";
+import Breakthroughs from "./Pages/Breakthroughs";
 import "./App.css"; // Import the CSS file for styling
 
 function App() {
