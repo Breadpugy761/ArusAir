@@ -1,0 +1,10 @@
+.futuretech-container {
+    background-image: url("public/futuretecharus.png"); /* Adjust the path based on your folder structure */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+    color: white;
+  }
+  

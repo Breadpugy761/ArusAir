@@ -1,0 +1,10 @@
+.home-container {
+    background-image: url("public/homearus.webp"); /* Relative path from Pages to assets */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+    color: white;
+  }
+  
